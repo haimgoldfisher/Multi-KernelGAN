@@ -1,1 +1,1 @@
-# Multi-kernel-GAn
+# Multi-kernel-GAN

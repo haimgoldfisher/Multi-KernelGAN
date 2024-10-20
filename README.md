@@ -1,5 +1,9 @@
 # Multi-KernelGAN - Multi Kernel Estimation based Object Segmentation
 
+<img src="Images/template.png" alt="Multi-KernelGAN Model Pipeline">
+
+By Asaf Yekutiel & Haim Goldfisher
+
 This work is based on [KernelGAN](https://github.com/sefibk/KernelGAN) by Sefi Bell-Kligler, Assaf Shocher and Michal Irani.
 It also utils the [SAM - Segment Anything Model](https://github.com/facebookresearch/segment-anything) and [YOLOv8](https://github.com/ultralytics/ultralytics) algorithms.
 

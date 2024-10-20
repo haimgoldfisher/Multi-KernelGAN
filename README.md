@@ -15,7 +15,7 @@ It also utils the [SAM - Segment Anything Model](https://github.com/facebookrese
 **Open the Notebook for mask creation in Google Colab**
 
 
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Run_MultiKernelGAN+ZSSR.ipynb)  
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Run_MultiKernelGAN%2BZSSR.ipynb)  
 **Open the Notebook for Multi-KernelGAN+ZSSR (Ours) in Google Colab**
 
 <img src="Images/good_example.png" alt="Multi-KernelGAN Model Performance">

@@ -44,15 +44,16 @@ This notebook uses Facebook’s Segment Anything Model (SAM) to generate object 
 
 This notebook combines Multi-KernelGAN with ZSSR. It segments the image into different regions using object detection and segmentation, estimates multiple kernels for those regions, and applies ZSSR to each region separately for improved super-resolution results.
 
-**Steps to run:**
-1. First, run the **Mask Generation with SAM** notebook to generate object segmentation masks.
-2. Open the Multi-KernelGAN notebook by clicking the Colab badge above.
-3. Add three more subfolders in the `KernelGAN-Masks` directory:
-   - `MultiKernelGAN` for storing the code needed to execute Multi-KernelGAN.
-   - `weights` for saving model weights.
-   - `exps` for storing the experiment results.
-4. The notebook will execute the Multi-KernelGAN process on each segmented region of the image. The results, including super-resolved regions, will be saved in the `exps` folder.
-5. The final output will be a composite image where each segmented region is super-resolved, stored in the `exps` folder.
+Steps to run:
+
+First, run the Mask Generation with SAM notebook to generate object segmentation masks.
+Open the Multi-KernelGAN notebook by clicking the Colab badge above.
+Add three more subfolders in the KernelGAN-Masks directory:
+code for storing the code needed to execute Multi-KernelGAN (View Code Folder).
+weights for saving model weights.
+exps for storing the experiment results.
+The notebook will execute the Multi-KernelGAN process on each segmented region of the image. The results, including super-resolved regions, will be saved in the exps folder.
+The final output will be a composite image where each segmented region is super-resolved, stored in the exps folder.
 
 ---
 

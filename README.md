@@ -22,9 +22,10 @@ This notebook implements the original KernelGAN+ZSSR pipeline. It estimates the 
 
 **How to run:**
 1. Open the notebook by clicking the Colab badge above.
-2. Upload your low-resolution input image when prompted.
-3. Follow the steps in the notebook to estimate the image kernel and perform super-resolution using the ZSSR algorithm.
-4. The final output will be an upscaled version of the input image.
+2. create 2 folders one with the name input and one with the name output
+3. Upload your low-resolution input image to input folder.
+4. Follow the steps in the notebook to estimate the image kernel and perform super-resolution using the ZSSR algorithm.
+5. The final output will be an upscaled version of the input image and will be found in the output folder.
 
 #### 2. **[Mask Creation with SAM (Segment Anything Model)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Mask_Generator.ipynb)**  
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Mask_Generator.ipynb)  

@@ -1,6 +1,4 @@
-Sure! Here's the full updated README with the necessary enhancements:
 
----
 
 # **Multi-KernelGAN**
 ## Multi-Kernel Estimation for Object Segmentation and Super-Resolution

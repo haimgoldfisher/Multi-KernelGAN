@@ -34,9 +34,10 @@ This notebook generates object masks using Facebook's SAM (Segment Anything Mode
 
 **How to run:**
 1. Open the notebook by clicking the Colab badge above.
-2. Upload your input image.
-3. The notebook will use SAM to generate segmentation masks for various objects in the image.
-4. You can download the mask images and use them in the next stages of the pipeline or for visualization purposes.
+2. The the notebook asuume that you have in your drive folder with the name KernelGAN-Masks and that folder contion 2 subfolders one with the name imgs for input and one with the name masks for the output
+3. uploed the imges that you want to find the mask for tham to the imgs folder in folder that contin pair of imges one is LR and one is HR
+4. The notebook will use SAM to generate segmentation masks for various objects in the image.
+5. You can download the mask images and use them in the next stages of the pipeline or for visualization purposes.
 
 #### 3. **[Multi-KernelGAN+ZSSR (Ours)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Run_MultiKernelGAN%2BZSSR.ipynb)**  
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Run_MultiKernelGAN%2BZSSR.ipynb)  

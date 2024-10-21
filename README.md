@@ -1,56 +1,58 @@
-To enhance the README, you can include detailed instructions on how to run each notebook and what they do. Here's an improved version:
+Here's a more professional version of the README, maintaining all stages and details:
 
 ---
 
-# "Multi-KernelGAN"
-## Multi Kernel Estimation based Object Segmentation
+# **Multi-KernelGAN**
+## Multi-Kernel Estimation for Object Segmentation and Super-Resolution
 
-### Asaf Yekutiel, Haim Goldfisher
+### Authors: Asaf Yekutiel, Haim Goldfisher
 
 <img src="Images/template.png" alt="Multi-KernelGAN Model Pipeline">
 
-This work builds upon [KernelGAN](https://github.com/sefibk/KernelGAN) by Sefi Bell-Kligler, Assaf Shocher, and Michal Irani. It also leverages the [SAM - Segment Anything Model](https://github.com/facebookresearch/segment-anything) and [YOLOv8](https://github.com/ultralytics/ultralytics) algorithms for image segmentation and object detection.
+This project is an extension of the [KernelGAN](https://github.com/sefibk/KernelGAN) framework, originally developed by Sefi Bell-Kligler, Assaf Shocher, and Michal Irani. Additionally, this work leverages the [Segment Anything Model (SAM)](https://github.com/facebookresearch/segment-anything) for image segmentation and [YOLOv8](https://github.com/ultralytics/ultralytics) for object detection, creating an enhanced super-resolution pipeline with multiple kernel estimations.
 
 ---
 
-### Notebooks
+### Google Colab Notebooks
 
-#### 1. **[Original KernelGAN+ZSSR in Google Colab](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/KernelGAN.ipynb)**  
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/KernelGAN.ipynb)  
+#### 1. **[Original KernelGAN + ZSSR](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/KernelGAN.ipynb)**  
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/KernelGAN.ipynb)
 
-This notebook implements the original KernelGAN+ZSSR pipeline. It estimates the kernel of an input image and applies the Zero-Shot Super-Resolution (ZSSR) algorithm to upscale the image.
+This notebook implements the original KernelGAN combined with Zero-Shot Super-Resolution (ZSSR). It estimates the kernel of a low-resolution input image and performs super-resolution based on the estimated kernel.
 
-**How to run:**
-1. Open the notebook by clicking the Colab badge above.
-2. create 2 folders one with the name input and one with the name output
-3. Upload your low-resolution input image to input folder.
-4. Follow the steps in the notebook to estimate the image kernel and perform super-resolution using the ZSSR algorithm.
-5. The final output will be an upscaled version of the input image and will be found in the output folder.
+**Steps to run:**
+1. Open the notebook using the Colab badge above.
+2. Create two directories named `input` and `output` in the notebook environment.
+3. Upload your low-resolution image into the `input` folder.
+4. Run the steps in the notebook to estimate the image kernel and apply the ZSSR algorithm.
+5. The super-resolved output will be saved in the `output` folder.
 
-#### 2. **[Mask Creation with SAM (Segment Anything Model)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Mask_Generator.ipynb)**  
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Mask_Generator.ipynb)  
+#### 2. **[Mask Generation with SAM](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Mask_Generator.ipynb)**  
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Mask_Generator.ipynb)
 
-This notebook generates object masks using Facebook's SAM (Segment Anything Model), which can be used for object segmentation in later stages of the pipeline.
+This notebook uses Facebook’s Segment Anything Model (SAM) to generate object segmentation masks, which will later be used in the Multi-KernelGAN pipeline.
 
-**How to run:**
-1. Open the notebook by clicking the Colab badge above.
-2. The the notebook asuume that you have in your drive folder with the name KernelGAN-Masks and that folder contion 2 subfolders one with the name imgs for input and one with the name masks for the output
-3. uploed the imges that you want to find the mask for tham to the imgs folder in folder that contin pair of imges one is LR and one is HR
-4. The notebook will use SAM to generate segmentation masks for various objects in the image.
-5. You can download the mask images and use them in the next stages of the pipeline or for visualization purposes.
+**Steps to run:**
+1. Open the notebook via the Colab badge.
+2. Ensure you have a directory in your Google Drive named `KernelGAN-Masks`, with two subfolders: `imgs` (for input images) and `masks` (for output masks).
+3. Upload the images you wish to process into the `imgs` folder. For each image, there should be two versions: one low-resolution (LR) and one high-resolution (HR).
+4. The notebook will generate segmentation masks for the objects in the images using SAM.
+5. The output masks will be stored in the `masks` folder, ready for use in subsequent steps of the pipeline.
 
-#### 3. **[Multi-KernelGAN+ZSSR (Ours)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Run_MultiKernelGAN%2BZSSR.ipynb)**  
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Run_MultiKernelGAN%2BZSSR.ipynb)  
+#### 3. **[Multi-KernelGAN + ZSSR (Enhanced Pipeline)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Run_MultiKernelGAN%2BZSSR.ipynb)**  
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kuty007/Multi-Kernel-GAN/blob/main/Colab%20Notebooks/Run_MultiKernelGAN%2BZSSR.ipynb)
 
-This notebook runs the complete Multi-KernelGAN pipeline with ZSSR. It estimates multiple kernels for different regions of the image based on segmentation and object detection, and then applies ZSSR to each region individually for better super-resolution results.
+This notebook combines Multi-KernelGAN with ZSSR. It segments the image into different regions using object detection and segmentation, estimates multiple kernels for those regions, and applies ZSSR to each region separately for improved super-resolution results.
 
-**How to run:**
-1. Open the notebook by clicking the Colab badge above.
-2. Upload your input image.
-3. The notebook will first run YOLOv8 to detect objects in the image.
-4. It will then segment the image using SAM and estimate individual kernels for each segmented object or region.
-5. Finally, ZSSR will be applied to each region to produce the super-resolved output.
-6. The resulting upscaled image will be saved for download.
+**Steps to run:**
+1. First, run the **Mask Generation with SAM** notebook to generate object segmentation masks.
+2. Open the Multi-KernelGAN notebook by clicking the Colab badge above.
+3. Add three more subfolders in the `KernelGAN-Masks` directory:
+   - `MultiKernelGAN` for storing the code needed to execute Multi-KernelGAN.
+   - `weights` for saving model weights.
+   - `exps` for storing the experiment results.
+4. The notebook will execute the Multi-KernelGAN process on each segmented region of the image. The results, including super-resolved regions, will be saved in the `exps` folder.
+5. The final output will be a composite image where each segmented region is super-resolved, stored in the `exps` folder.
 
 ---
 

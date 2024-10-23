@@ -5,6 +5,8 @@
 
 ### Authors: Asaf Yekutiel, Haim Goldfisher
 
+Paper: https://arxiv.org/abs/2410.17064
+
 <img src="Images/template.png" alt="Multi-KernelGAN Model Pipeline">
 
 This project is an extension of the [KernelGAN](https://github.com/sefibk/KernelGAN) framework, originally developed by Sefi Bell-Kligler, Assaf Shocher, and Michal Irani. Additionally, this work leverages the [Segment Anything Model (SAM)](https://github.com/facebookresearch/segment-anything) for image segmentation and [YOLOv8](https://github.com/ultralytics/ultralytics) for object detection, creating an enhanced super-resolution pipeline with multiple kernel estimations.
